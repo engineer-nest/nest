@@ -5,6 +5,12 @@ export function Header() {
     <header>
       <nav className="flex justify-center space-x-4">
         <Link
+          href="/about"
+          className="font-medium px-3 py-2 text-slate-100 rounded-lg hover:bg-slate-100 hover:text-slate-900"
+        >
+          About
+        </Link>
+        <Link
           href="/"
           className="font-medium px-3 py-2 text-slate-100 rounded-lg hover:bg-slate-100 hover:text-slate-900"
         >
