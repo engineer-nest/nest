@@ -1,8 +1,9 @@
 # バージョン
 
-- Rails: 7.0.6
+- Rails: 7.0.7
 - Next.js: 13.4.10
 - postgres:15.3
+- redis: 7.0
 
 # 資料格納
 
