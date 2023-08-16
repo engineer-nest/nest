@@ -48,5 +48,6 @@ end
 
 gem 'redis'
 gem 'redis-rails'
+gem "redis-actionpack"
 
 gem "rack-cors"
