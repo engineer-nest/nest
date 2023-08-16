@@ -1,0 +1,26 @@
+version: "3"
+services:
+  api:
+    build: ./api
+    ports:
+      - 3000:3000
+    depends_on:
+      - postgresql
+    volumes:
+      - ./api:/app
+    command: /bin/sh -c "rm -f tmp/pids/server.pid && rails s -p 3000 -b '0.0.0.0'"
+  front:
+    build: ./front
+    ports:
+      - 3001:3000
+    volumes:
+      - ./front:/app
+  postgresql:
+    image: postgres:15.3
+    container_name: postgres
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: myapp
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: myapp_development
