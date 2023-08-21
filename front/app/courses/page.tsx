@@ -18,7 +18,7 @@ export default function Page() {
       <div>couses.index</div>
       {courses?.map((course, index) => (
         <div key={index}>
-          <Link href={`api/v1/courses/${index}`}>{course.name}</Link>
+          <Link href={`/courses/${index}`}>{course.name}</Link>
           <br />
         </div>
       ))}
