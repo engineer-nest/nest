@@ -24,6 +24,16 @@ docker compose run --rm api rails db:create
 DB 作成
 
 ```
+docker compose run --rm api rails db:migrate
+```
+DB 読み込み
+
+```
+docker compose run --rm api rails db:seed
+```
+初期データ追加
+
+```
 docker compose run --rm front yarn install
 ```
 
